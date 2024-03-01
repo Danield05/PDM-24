@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AC21051_01</string>
+    <string name="boton1">suma</string>
+    <string name="boton2">resta</string>
+    <string name="boton3">mult</string>
+    <string name="parametro1">valor1</string>
+    <string name="parametro2">valor2</string>
+    <string name="parametro3">valor3</string>
+    <string name="resultado">total</string>
+</resources>

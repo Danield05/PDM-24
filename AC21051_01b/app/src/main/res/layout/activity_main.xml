@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:text="@string/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="76dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/button_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/button_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="93dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/button_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="77dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="@string/hint_1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="@string/hint_2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="@string/hint_3"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
