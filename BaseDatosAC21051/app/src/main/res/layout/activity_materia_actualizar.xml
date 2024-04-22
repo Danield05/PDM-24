@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:stretchColumns="1"
+    tools:context=".MateriaActualizarActivity">
+
+    <TableRow>
+
+        <TextView android:text="@string/codmateria" />
+
+        <EditText
+            android:id="@+id/editCodmateria"
+            android:hint="@string/codmateria"
+            android:inputType="text"
+            android:maxLength="6"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="@string/nommateria" />
+
+        <EditText
+            android:id="@+id/editNommateria"
+            android:hint="@string/nommateria"
+            android:inputType="text"
+            android:maxLength="50"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="@string/unidadesval" />
+
+        <EditText
+            android:id="@+id/editUnidadesval"
+            android:hint="@string/unidadesval"
+            android:inputType="number"
+            android:maxLength="1"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:onClick="actualizarMateria"
+            android:text="@string/actualizar" />
+
+        <Button
+            android:onClick="limpiarTexto"
+            android:text="@string/limpiar" />
+    </TableRow>
+
+</TableLayout>

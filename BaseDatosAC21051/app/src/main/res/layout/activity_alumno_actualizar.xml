@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip"
+    android:stretchColumns="1" >
+    <TableRow>
+        <TextView
+            android:text="@string/carnet" />
+
+        <EditText
+            android:id="@+id/editCarnet"
+            android:hint="@string/carnet"
+            android:inputType="text"
+            android:maxLength="7"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/nombre" />
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:maxLength="30"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/apellido" />
+
+        <EditText
+            android:id="@+id/editApellido"
+            android:hint="@string/apellido"
+            android:inputType="text"
+            android:maxLength="30"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/sexo" />
+
+        <EditText
+            android:id="@+id/editSexo"
+            android:hint="@string/sexo"
+            android:inputType="text"
+            android:maxLength="1"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:onClick="actualizarAlumno"
+            android:text="@string/actualizar" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:onClick="limpiarTexto"
+            android:text="@string/limpiar" />
+    </TableRow>
+</TableLayout>
